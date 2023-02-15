@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SwiperModule } from 'swiper/angular';
+import { SwiperComponent } from './swiper/swiper.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SwiperComponent
   ],
   imports: [
     BrowserModule,

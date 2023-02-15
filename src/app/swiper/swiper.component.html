@@ -1,0 +1,16 @@
+<swiper
+  [config]="config"
+  (swiper)="onSwiper($event)"
+  (slideChange)="onSlideChange()"
+  [autoplay]="{ delay: 1000, disableOnInteraction: false }"
+  style="height: 100%"
+>
+  <ng-template swiperSlide *ngFor="let image of images">
+    <div [style.backgroundImage]="'url(' + image + ')'" class="img"></div>
+    <!-- <img src="{{image}}" alt="">  -->
+  </ng-template>
+  <!-- <ng-template swiperSlide *ngFor="let loadImage of loadImages">
+    <img [src]="getTrustUrl(loadImage)" alt=""> 
+  </ng-template> -->
+</swiper>
+<!-- <input type="file" name="" (change)="uploadImages($event)" multiple> -->
